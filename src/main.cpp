@@ -5,6 +5,7 @@
 
 int main() {
   cEnv::get();
+  cEnv::get()->bgColor(Color::white);
   cGamePlayer game;
   game.run();
 }

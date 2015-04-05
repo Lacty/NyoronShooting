@@ -1,7 +1,8 @@
 
 #pragma once
 #include "lib/framework.hpp"
-#include "float2.h"
+#include "MyLib/float2.h"
+#include "MyLib/ald_font.h"
 
 enum WindowSize {
   WIDTH = 512,

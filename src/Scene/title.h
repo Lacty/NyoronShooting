@@ -1,6 +1,7 @@
 
 #pragma once
 #include "scene.h"
+#include "../common.h"
 
 
 class cTitle : public cScene {
@@ -14,4 +15,12 @@ public:
 
 private:
 
+  enum class Font : u_int {
+    Size = 50
+  };
+  float    font_alpha;
+  void     fontAlpha();
+  cAldFont font;
+
+  void     gotoNextScene();
 };

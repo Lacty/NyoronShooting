@@ -3,6 +3,8 @@
 #include "env.h"
 
 
+class cScene;
+
 class cSceneManager {
 public:
 
