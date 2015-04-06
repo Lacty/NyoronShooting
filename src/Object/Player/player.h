@@ -1,12 +1,17 @@
 
 #pragma once
 #include "../../common.h"
+#include <memory>
 
+
+class cPlayerMove;
 
 class cPlayer {
 public:
 
-  cPlayer() = default;
+  cPlayer();
+
+  void componentInit();
 
   void update();
   void draw();
@@ -14,4 +19,8 @@ public:
 
 private:
 
+  Texture m_image;
+  void drawPlayer();
+
+  std::shared_ptr<cPlayerMove> m_move;
 };
