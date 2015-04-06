@@ -8,9 +8,9 @@ cScene(manager) {}
 
 
 void cMainGame::update() {
-
+  m_player.update();
 }
 
 void cMainGame::draw() {
-  drawArc(0, 0, 50, 50, 0, 5, 100, 2, Color(0.0f, 0.2f, 1.0f));
+  m_player.draw();
 }
