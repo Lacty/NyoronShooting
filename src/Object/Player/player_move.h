@@ -34,7 +34,7 @@ private:
   };
 
   enum InitPos {
-    POS_X = -40,
+    POS_X = -20,
     POS_Y = -220
   };
 };

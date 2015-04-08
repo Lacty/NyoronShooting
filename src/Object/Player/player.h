@@ -5,6 +5,7 @@
 
 
 class cPlayerMove;
+class cPlayerShot;
 
 class cPlayer {
 public:
@@ -16,6 +17,8 @@ public:
   void update();
   void draw();
 
+  float2 getPos() const;
+
 
 private:
 
@@ -23,4 +26,5 @@ private:
   void drawPlayer();
 
   std::shared_ptr<cPlayerMove> m_move;
+  std::shared_ptr<cPlayerShot> m_shot;
 };
