@@ -2,6 +2,7 @@
 #pragma once
 #include "scene.h"
 #include "../common.h"
+#include "../Object/BackGround/back_ground.h"
 #include "../Object/Player/player.h"
 
 
@@ -16,5 +17,6 @@ public:
 
 private:
 
-  cPlayer m_player;
+  cBackGround m_bg;
+  cPlayer     m_player;
 };

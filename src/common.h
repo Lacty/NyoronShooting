@@ -5,7 +5,7 @@
 #include "MyLib/ald_font.h"
 
 enum WindowSize {
-  WIDTH = 512,
+  WIDTH  = 512,
   HEIGHT = 512,
 };
 

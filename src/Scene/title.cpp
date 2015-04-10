@@ -22,14 +22,14 @@ void cTitle::update() {
 
 void cTitle::draw() {
   static float2 pos   = float2(-150, 0);
-  static float  count = 0.30;
+  static float  count = 0.3f;
   font.draw("Push Any Key", pos, count, Color(0.0f, 0.2f, 1.0f, font_alpha));
 }
 
 void cTitle::fontAlpha() {
-  const  float time = 0.06;
-  static float anime = 0;
-  const  float angle = 1.2;
+  const  float time = 0.06f;
+  static float anime = 0.0f;
+  const  float angle = 1.2f;
   anime += time;
   font_alpha = sin(anime) + angle;
 }
