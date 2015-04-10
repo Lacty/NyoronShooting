@@ -15,11 +15,14 @@ public:
 
 private:
 
+  WindowEdge m_edge;
+
   float2 m_pos;
   void moveUp();
   void moveDown();
   void moveLeft();
   void moveRight();
+  void moveBound();
 
   enum Button {
     UP    = 'W',

@@ -17,13 +17,17 @@ public:
   void update();
   void draw();
 
-  float2 getPos() const;
+  float2 getPos()  const;
+  float2 getSize() const;
 
 
 private:
 
   Texture m_image;
   void drawPlayer();
+
+  float2 m_pos;
+  float2 m_size;
 
   std::shared_ptr<cPlayerMove> m_move;
   std::shared_ptr<cPlayerShot> m_shot;

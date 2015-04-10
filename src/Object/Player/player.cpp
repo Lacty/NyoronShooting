@@ -5,7 +5,8 @@
 
 
 cPlayer::cPlayer() :
-m_image("res/texture/nyoron.png")
+m_image("res/texture/nyoron.png"),
+m_size(float2(42, 60))
 {
   componentInit();
 }
@@ -30,11 +31,8 @@ void cPlayer::draw() {
 }
 
 void cPlayer::drawPlayer() {
-  static float2 pos  = float2::Zero();
-  pos  = m_move->getPos();
-  static float2 size = float2::Zero();
-  size = float2(42, 60);
-  drawTextureBox(pos.x, pos.y, size.x, size.y,
+  m_pos = m_move->getPos();
+  drawTextureBox(m_pos.x, m_pos.y, m_size.x, m_size.y,
                  0, 0, 200, 300,
                  m_image,
                  Color(1, 1, 1));
@@ -42,4 +40,8 @@ void cPlayer::drawPlayer() {
 
 float2 cPlayer::getPos() const {
   return m_move->getPos();
+}
+
+float2 cPlayer::getSize() const {
+  return m_size;
 }
