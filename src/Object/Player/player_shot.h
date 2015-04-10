@@ -22,7 +22,7 @@ private:
   WindowEdge edge;
 
   enum {
-    Shot_Max   = 3,
+    Shot_Max   = 4,
     Shot_Speed = 20
   };
   enum ShotStatus {

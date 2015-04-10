@@ -35,7 +35,10 @@ void cPlayerShot::createShot() {
   for (int i = 0; i < Shot_Max; ++i) {
     if (shots[i].status == Inactive) {
       shots[i].status = Active;
-      shots[i].pos = m_player->getPos();
+      shots[i].pos.x = m_player->getPos().x +
+                      (m_player->getSize().x / 3);
+      shots[i].pos.y = m_player->getPos().y +
+                      (m_player->getSize().y / 2);
       break;
     }
   }
