@@ -45,3 +45,7 @@ float2 cPlayer::getPos() const {
 float2 cPlayer::getSize() const {
   return m_size;
 }
+
+float2* cPlayer::getShotPos() const {
+  return m_shot->getShotPos();
+}

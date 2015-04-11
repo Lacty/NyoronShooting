@@ -58,3 +58,8 @@ void cPlayerShot::shotsBound() {
       shots[i].status = Inactive;
   }
 }
+
+float2* cPlayerShot::getShotPos() {
+  float2* temp = &shots[0].pos;
+  return temp;
+}

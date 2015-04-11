@@ -17,6 +17,7 @@ public:
 
   float2 getPos()  const;
   float2 getSize() const;
+  float2* getShotPos() const;
 
 
 private:

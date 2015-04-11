@@ -9,7 +9,7 @@ cScene(manager) {}
 
 void cMainGame::update() {
   m_player.update();
-  m_enemy.update();
+  m_enemy.update(m_player.getShotPos());
 }
 
 void cMainGame::draw() {

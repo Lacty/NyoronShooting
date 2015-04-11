@@ -12,6 +12,8 @@ public:
   void update();
   void draw();
 
+  float2* getShotPos();
+
 
 private:
 
