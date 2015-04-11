@@ -118,3 +118,11 @@ void cEnemy::collisionShotToEnemy(float2* shot_pos) {
     }
   }
 }
+
+bool cEnemy::getStatusOfLastEnemy() const {
+  return second_enemy[Second_Num].active;
+}
+
+float2 cEnemy::getPosOfLastEnemy() const {
+  return second_enemy[Second_Num].pos;
+}

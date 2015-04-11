@@ -8,11 +8,14 @@ public:
 
   cSmoche();
 
-  void update();
+  void update(bool, float2);
   void draw();
 
 
 private:
+
+  void initPos(float2&);
+  bool is_init;
 
   Texture image;
   float2  m_pos;

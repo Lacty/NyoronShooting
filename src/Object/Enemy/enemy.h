@@ -12,6 +12,9 @@ public:
   void update(float2*);
   void draw();
 
+  bool   getStatusOfLastEnemy() const;
+  float2 getPosOfLastEnemy()    const;
+
 
 private:
   

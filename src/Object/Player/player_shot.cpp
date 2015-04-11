@@ -9,7 +9,7 @@ cPlayerInterface(player)
 {
   for (int i = 0; i < Shot_Max; ++i) {
     shots[i].status = Inactive;
-    shots[i].pos    = float2::Zero();
+    shots[i].pos    = float2(0.0f, edge.top);
   }
 }
 
