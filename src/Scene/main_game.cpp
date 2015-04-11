@@ -8,11 +8,12 @@ cScene(manager) {}
 
 
 void cMainGame::update() {
-  m_bg.update();
   m_player.update();
+  m_enemy.update();
 }
 
 void cMainGame::draw() {
   m_bg.draw();
   m_player.draw();
+  m_enemy.draw();
 }

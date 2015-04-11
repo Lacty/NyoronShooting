@@ -8,7 +8,6 @@ public:
 
   cBackGround();
 
-  void update();
   void draw();
 
 

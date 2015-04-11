@@ -12,8 +12,6 @@ public:
 
   cPlayer();
 
-  void componentInit();
-
   void update();
   void draw();
 
@@ -22,6 +20,8 @@ public:
 
 
 private:
+
+  void componentInit();
 
   Texture m_image;
   void drawPlayer();

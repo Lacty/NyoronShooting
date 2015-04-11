@@ -4,6 +4,7 @@
 #include "../common.h"
 #include "../Object/BackGround/back_ground.h"
 #include "../Object/Player/player.h"
+#include "../Object/Enemy/enemy.h"
 
 
 class cMainGame : public cScene {
@@ -19,4 +20,5 @@ private:
 
   cBackGround m_bg;
   cPlayer     m_player;
+  cEnemy      m_enemy;
 };

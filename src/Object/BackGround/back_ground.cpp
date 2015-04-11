@@ -8,10 +8,6 @@ m_pos(-(Size_W * 0.5f), -(Size_H * 0.25f)),
 m_size(Size_W, Size_H) {}
 
 
-void bg::update() {
-
-}
-
 void bg::draw() {
   static float anime = 0.0f;
   anime += anime_speed;
